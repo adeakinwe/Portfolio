@@ -44,7 +44,11 @@ header a,
 .contact h1{
     color: #fff ;
     margin-top: 10px ;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+}
+
+header a:hover{
+    color: #1785A7;
 }
 
 header h1{
@@ -116,7 +120,8 @@ span.m-left{
 .text p{
     letter-spacing: 3px;
     word-spacing: 10px;
-    font-size: .8rem
+    font-size: 1.5rem;
+    font-family: geneva;
 }
 
 .text a{
@@ -124,10 +129,10 @@ span.m-left{
     background-color: none;
     border: 3px solid #1785A7;
     color: #1785A7;
-    font-size: .8rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
     position: relative;
-    top: 80px;
+    top: 100px;
     overflow: hidden;
     transition:all .5s;
     display: inline-block;
@@ -293,11 +298,12 @@ div[class^='category-']{
     grid-gap: 20px;
 }
 
-.work a{
+.work p{
     justify-self: center;
     position: relative;
     display: inline-block;
 }
+
 
 .work-category .active{
     background-color: #1785A7;
@@ -307,7 +313,7 @@ button.active{
     color: #fff;
 }
 
-.work a img {
+.work p img {
     width: 300px;
     justify-self: center;
     border-radius: 10px;
@@ -382,7 +388,7 @@ footer p{
 }
 
  .main-footer-container p{
-   font-size: 1.7rem;
+   font-size: 1.5rem;
    color: #fff;
 }
 /*.main-footer-container ul{
@@ -395,7 +401,7 @@ footer p{
 
 .footer-nav img{
     margin-top: 10px;
-    width:50px; height: 40px;
+    width:80px; height: auto;
     align-items: center;
     float: left;
     margin-right: 10px;

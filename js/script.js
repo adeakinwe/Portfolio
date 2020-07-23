@@ -24,7 +24,7 @@ t1.fromTo(htmlBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(95% - 6px)`,
     .fromTo(jsBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(90% - 6px)`, ease: Power4.easeOut })
     .fromTo(bootBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(95% - 6px)`, ease: Power4.easeOut })
     .fromTo(angularBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(90% - 6px)`, ease: Power4.easeOut })
-    .fromTo(nodeBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(75% - 6px)`, ease: Power4.easeOut })
+    .fromTo(nodeBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(80% - 6px)`, ease: Power4.easeOut })
     .fromTo(sqlBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(95% - 6px)`, ease: Power4.easeOut })
     .fromTo(pythonBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(90% - 6px)`, ease: Power4.easeOut })
     .fromTo(csBar, .75, { width: `calc(0% - 6px)` }, { width: `calc(85% - 6px)`, ease: Power4.easeOut })
