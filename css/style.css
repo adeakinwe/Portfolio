@@ -69,10 +69,13 @@ a{
 
 .main-info-section{
     height: calc(100vh - 81.6px) ;
+    display:flex;
+    justify-content: space-between;
 }
 
 .text{
     margin-top: 120px ;
+    flex: 1;
 }
 
 .text h1{
@@ -147,6 +150,7 @@ span.m-left{
     width: 350px;
     margin-top: 50px;
     border-radius: 5px;
+    flex: 1;
 }
 
 .about{
@@ -158,7 +162,7 @@ span.m-left{
 .work h1{
     font-size: 6rem;
     z-index: 0;
-    opacity: .1.1;
+    opacity: 0.5;
 }
 
 .about-me-info{
@@ -202,7 +206,7 @@ span.m-left{
 .skills h1, .contact h1{
     text-align: right;
     font-size: 6rem;
-    opacity: .1.1;
+    opacity: 0.5;
 }
 
 .skills-info{
@@ -303,15 +307,17 @@ button.active{
     color: #fff;
 }
 
-.work-img{
-    margin-left: 300px;
+.work a img {
+    width: 300px;
+    justify-self: center;
     border-radius: 10px;
-    height: 60%;width:60%;
 }
 
-.work a img {
-    width: 450px;
-    justify-self: center;
+@media(min-width: 900px){
+    .work a img{
+        width: 450px;
+        height: auto;
+    }
 }
 
 .a{
@@ -334,7 +340,7 @@ div.hideCategory{
 form input,
 form textarea{
     display: block;
-    width: 500px;
+    width: 45%;
     padding: 20px;
     background-color: #252627;
     border: 3px solid #707070;
@@ -373,22 +379,34 @@ footer p{
     margin-top: 40px;
 }
 
-.main-footer-container{
+/* .main-footer-container{
     display:flex;
     align-items:center;
 }
 .main-footer-container ul{
     flex-grow: 1;
-    text-align:end;
-}
+    text-align:end; 
+}*/
 .footer-nav li {
     padding: 0 .5em;    
     }
 .footer-nav img{
-    width:40px; height: 30px;
+    margin-top: 10px;
+    width:35px; height: 30px;
     align-items: center;
     float: left;
     margin-right: 10px;
     color:#707070;
-
 }
+
+.alert{
+    border: 3px solid #1785A7;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    color: #707070;
+    width:50%;
+    height:auto;
+    position: relative;
+    opacity: 1.0;
+}
+

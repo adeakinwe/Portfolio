@@ -62,3 +62,61 @@ function showRequiredCategory(event) {
     getCategory.classList.add('showCategory')
 
 }
+
+//Firebase Config
+var config = {
+    apiKey: "AIzaSyDZLTA5JFE-OJbgsIM1JNFYS4iRiYmG0HM",
+    authDomain: "portfolio-a7a11.firebaseapp.com",
+    databaseURL: "https://portfolio-a7a11.firebaseio.com",
+    projectId: "portfolio-a7a11",
+    storageBucket: "portfolio-a7a11.appspot.com",
+    messagingSenderId: "105256056123",
+    appId: "1:105256056123:web:b15a42b43d225c898fb31e",
+    measurementId: "G-D620LY8XJH"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(config);
+  firebase.analytics();
+
+  var messageRef = firebase.database().ref('messages');
+
+  //form
+
+document.querySelector('.alert').style.visibility = 'hidden'; //hide alert
+
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+
+    var name = getInputVal('name');
+    var email = getInputVal('email');
+    var phone = getInputVal('phone');
+    var message = getInputVal('message');
+
+    saveMessage(name, email, phone, message);
+
+    document.querySelector('.alert').style.visibility = 'visible';
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(() => {
+        document.querySelector('.alert').style.display = 'none';
+    }, 5000);
+
+    document.getElementById('contactForm').reset();
+}
+
+function getInputVal(id){
+    return document.getElementById(id).value;
+}
+
+function saveMessage(name,email,phone,message){
+    var newMessageRef = messageRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        phone: phone,
+        message: message
+    })
+}
