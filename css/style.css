@@ -2,7 +2,7 @@
     margin: 0 ; 
     padding:0 ;
     box-sizing: border-box ; 
-    font-family: cursive ;
+    font-family: sans-serif ;
 }
 
 html{
@@ -36,18 +36,25 @@ header{
     background-color: #181818 ;   
 }
 
-header h1, header a,
+header a,
 .text p,
 .about h1,
 .skills h1,
 .work h1,
 .contact h1{
-    color: #707070 ;
+    color: #fff ;
     margin-top: 10px ;
+    font-size: 1.3rem;
+}
+
+header h1{
+font-size: 1.8rem;
+color: #fff;
+letter-spacing: 2px;
 }
 
 header img{
-    width:40px; height: 40px ;
+    width:50px; height: 50px ;
     margin-right: 15px;
     border-radius: 6px;
 }
@@ -160,8 +167,9 @@ span.m-left{
 
 .about h1,
 .work h1{
+    margin-top: 5px;
     font-size: 6rem;
-    z-index: 0;
+    z-index: -0.5;
     opacity: 0.5;
 }
 
@@ -171,7 +179,7 @@ span.m-left{
     box-shadow: 0 0 1.2rem rgba(0, 0, 0, .25);
     padding: 50px;
     position: relative;
-    top: -70px;
+    top: 5px;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
@@ -179,8 +187,8 @@ span.m-left{
 }
 
 .about-me-info p{
-    font-size: 1.3rem;
-    color: #BEBEBE;
+    font-size: 2.1rem;
+    color: #fff;
 }
 
 .about-me-info p:nth-child(2),
@@ -188,18 +196,10 @@ span.m-left{
     margin-top: 15px;
 }
 
-.about img{
-    width: 300px;
-    position: relative;
-    top: -300px;
-    left: calc(100%-100px);
-    right: calc(100%-100px);
-    transform: translateX(calc(-100% + 100px));
-}
 
 .skills{
     height: 100vh;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     margin-top: 10px;
 }
 
@@ -230,8 +230,8 @@ span.m-left{
 
 div[class^='tag-']{
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-    width: 120px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     background-color: #1785A7;
     margin-right: 30px;
 }
@@ -240,14 +240,14 @@ div[class^='tag-'] p{
     color: #fff;
     text-align: left;
     padding-left: 10px;
-    font-size: 1.1rem;
-    padding-top: 3px;
+    font-size: 1.8rem;
+    padding-top: 5px;
 }
 
 .bar{
      position: relative;
      width: 600px;
-     height: 20px;
+     height: 40px;
      border: 2px solid #48CFAD;
      border-radius: 20px;
      margin-top: 7px;
@@ -256,7 +256,7 @@ div[class^='tag-'] p{
 div[class^="bar-"]{
     position: absolute;
     background-color: #48CFAD;
-    height: 10px;
+    height: 30px;
     border-radius: 20px;
     margin: 2.7px;
 }
@@ -279,7 +279,7 @@ div[class^="bar-"]{
     padding: 15px 30px;
     border-radius: 50px;
     color: #1785A7;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
     background-color: #252627;
     outline: none;
@@ -340,25 +340,27 @@ div.hideCategory{
 form input,
 form textarea{
     display: block;
-    width: 45%;
+    width: 80%;
     padding: 20px;
     background-color: #252627;
     border: 3px solid #707070;
     margin: 20px 0;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #fff;
     position: relative;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
+    
 }
 
 form input:last-child{
-width: 150px;
+width: 200px;
 background-color: #1785A7;
 border: none;
 cursor: pointer;
+border-radius: 5px;
 }
 
 footer hr{
@@ -379,34 +381,36 @@ footer p{
     margin-top: 40px;
 }
 
-/* .main-footer-container{
-    display:flex;
-    align-items:center;
+ .main-footer-container p{
+   font-size: 1.7rem;
+   color: #fff;
 }
-.main-footer-container ul{
+/*.main-footer-container ul{
     flex-grow: 1;
     text-align:end; 
 }*/
 .footer-nav li {
     padding: 0 .5em;    
     }
+
 .footer-nav img{
     margin-top: 10px;
-    width:35px; height: 30px;
+    width:50px; height: 40px;
     align-items: center;
     float: left;
     margin-right: 10px;
-    color:#707070;
 }
 
 .alert{
     border: 3px solid #1785A7;
+    padding: 15px;
     border-radius: 5px;
-    font-size: 1.3rem;
-    color: #707070;
+    font-size: 2.2rem;
+    color: #fff;
     width:50%;
     height:auto;
     position: relative;
     opacity: 1.0;
+    margin-left: 100px;
 }
 
