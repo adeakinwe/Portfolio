@@ -298,12 +298,11 @@ div[class^='category-']{
     grid-gap: 20px;
 }
 
-.work p{
+.work p {
     justify-self: center;
     position: relative;
     display: inline-block;
 }
-
 
 .work-category .active{
     background-color: #1785A7;
@@ -314,7 +313,7 @@ button.active{
 }
 
 .work p img {
-    width: 300px;
+    width: 390px;
     justify-self: center;
     border-radius: 10px;
 }
